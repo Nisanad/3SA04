@@ -12,7 +12,7 @@ const availableZipItems = [
 ]
 
 const ZipItem = ({ place, code, navigation }) => (
-    <TouchableHighlight onPress={() => navigation.navigate('Weather', { zipCode: code })}>
+    <TouchableHighlight onPress={() => navigation.navigate('Weather', { zipCode: code })} underlayColor="#cecece">
     <View>
         <Text>{place}</Text>
         <Text>{code}</Text>
@@ -35,5 +35,16 @@ export default function ZipCodeScreen() {
             <StatusBar style="auto" />
         </View>
     );
+const styles = StyleSheet.create({
+    container: {
+      
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      padding: 20,
+  
+  
+    }
+  })
 
 }
+
