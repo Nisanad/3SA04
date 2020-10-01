@@ -6,7 +6,6 @@ import ZipCodeScreen from './components/ZipCodeScreen';
 import WeatherScreen from './components/WeatherScreen';
 const Stack = createStackNavigator();
 
-
 export default function App() {
 
   return (
@@ -14,6 +13,8 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={ZipCodeScreen} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
+        
+        
       </Stack.Navigator>
     </NavigationContainer>
 
